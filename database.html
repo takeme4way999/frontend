@@ -1,0 +1,25 @@
+<!-- 姓名：xutongxin | 学号：24001010909 | 时间：2026-11-09 | 大模型：GPT-6 -->
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>数据库连接 · 拾光</title><link rel="stylesheet" href="css/xtx_style.css"><link rel="stylesheet" href="css/xtx_database.css"><script src="js/xtx_config.js" defer></script><script src="js/xtx_main.js" defer></script><script src="js/xtx_database.js" defer></script></head>
+<body>
+<canvas id="xtx_canvas" aria-hidden="true"></canvas>
+<div class="xtx_shell">
+  <header class="xtx_header"><a class="xtx_brand" href="index.html"><span class="xtx_mark">拾</span> SHIGUANG</a><nav aria-label="主导航"><a href="index.html">页面导航</a><a class="xtx_active" href="database.html" aria-current="page">数据库连接</a></nav></header>
+  <main class="xtx_about">
+    <p class="xtx_eyebrow">DATABASE CONNECTION</p><h1>连接数据，<br>让想法<span class="xtx_serif"> 落地。</span></h1>
+    <p class="xtx_lead">测试 MySQL 服务器连接，验证账号是否可以正常登录。<br>此次测试不会创建或修改数据库中的数据。</p>
+    <form id="xtx_database_form" class="xtx_about_panel">
+      <h2>MySQL 连接测试</h2>
+      <p>默认使用本机配置的账号与密码。需要测试其他账号时，请关闭默认配置并填写。</p>
+      <label class="xtx_default"><input id="xtx_use_default" type="checkbox" checked> 使用默认账号与密码</label>
+      <label class="xtx_field" for="xtx_user">用户名<input id="xtx_user" name="xtx_user" autocomplete="username" maxlength="128" placeholder="使用本机默认用户名" disabled></label>
+      <label class="xtx_field" for="xtx_password">密码<input id="xtx_password" name="xtx_password" type="password" autocomplete="current-password" maxlength="1024" placeholder="使用本机默认密码" disabled></label>
+      <button class="xtx_submit" id="xtx_connect" type="submit">测试连接 <span aria-hidden="true">↗</span></button>
+      <p id="xtx_result" class="xtx_result" role="status" aria-live="polite">等待测试连接</p>
+    </form>
+    <a class="xtx_back" href="index.html">← 返回页面导航</a>
+  </main>
+  <footer class="xtx_footer"><span>© 2026 xutongxin / 24001010909</span><div><span id="xtx_status" role="status">正在连接服务…</span><button id="xtx_motion" type="button" aria-pressed="false">暂停背景动画</button></div></footer>
+</div>
+</body></html>
